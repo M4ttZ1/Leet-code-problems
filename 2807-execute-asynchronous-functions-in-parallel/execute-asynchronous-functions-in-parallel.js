@@ -4,7 +4,6 @@
  */
 var promiseAll = async function(functions) {
     return new Promise((resolve, reject) => {
-        // We know the resulting array will be the same length as functions
         const results = new Array(functions.length);
         let count = 0;
         functions.forEach((fn, i) => {
